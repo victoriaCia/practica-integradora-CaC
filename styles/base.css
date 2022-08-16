@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.body__container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    text-align: center;
+    margin: auto 1%;
+    margin-top: 20px;
+}
+
+.header{
+    background: rgba(243,147,9,255);
+}
+
+/* ============ NAVBAR ============ */
+
+.navbar__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    padding-block: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.list li{
+    background: #c35307;
+    padding: 5px 7px;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+.header__title{
+    text-align: center;
+}
+
+.header__title h1{
+    font-size: 2.2em;
+    display: inline-block;
+    margin: 0;
+}
+
+.nav__title{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .list li{
+        background: inherit;
+        padding: 0;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .header__title{
+        display: none;
+    }
+
+    .nav__title{
+        display: contents;
+    }
+
+}
+
+
+/*===============FOOTER=============*/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(243,147,9,255);
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+.footer__icons{
+    display: flex;
+}
+
+.footer p{
+    align-self: center;
+    margin-right: 5px;
+}
+
+.footer__icons img{
+    position: relative;
+    top: 3px;
+}
