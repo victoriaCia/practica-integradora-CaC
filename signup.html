@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <title>Registrarse | La Cocina de Juan</title>
+</head>
+<body class="body__container">
+
+    <header class="header" id="header">
+
+    </header>
+
+    <main>
+        <section class="signup-container">
+            <h2>Formulario de registro</h2>
+            <form  action="show_data.html" class="form" id="form-signup" target="_blank">
+                
+                <div class="form__section" id="section__firstname">
+                    <label for="firstname">Nombre</label>
+                    <div class="form__section-input">
+                        <input type="text" name="firstname" id="firstname" placeholder="Ingrese nombre" maxlength="16">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The name can contain from 3 to 16 digits and be only letters</p>
+                </div>
+                <div class="form__section" id="section__lastname">
+                    <label for="lastname">Apellido</label>
+                    <div class="form__section-input">
+                        <input type="text" name="lastname" id="lastname" placeholder="Ingrese apellido" maxlength="16">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The name can contain from 3 to 16 digits and be only letters</p>
+                </div>
+                <div class="form__section" id="section__address">
+                    <label for="address">Direccion</label>
+                    <div class="form__section-input">
+                        <input type="text" name="address" id="address" placeholder="Ingrese direccion">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The address can only contain letters and numbers.</p>
+                </div>
+                <div class="form__section" id="section__address">
+                    <label for="address">Direccion</label>
+                    <div class="form__section-input">
+                        <input type="text" name="address" id="address" placeholder="Ingrese direccion">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The address can only contain letters and numbers.</p>
+                </div>
+                <div class="form__section" id="section__city">
+                    <label for="city">Ciudad</label>
+                    <div class="form__section-input">
+                        <input type="text" name="city" id="city" placeholder="Ingrese ciudad">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The city can only contain letters.</p>
+                </div>
+                <div class="form__section" id="section__postal-code">
+                    <label for="postal-code">Codigo postal</label>
+                    <div class="form__section-input">
+                        <input type="number" name="postal-code" id="postal-code" placeholder="Enter postal code">
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The postal code can only contain numbers.</p>
+                </div>
+                <div class="form__section" id="section__birth-date">
+                    <label for="birth-date">Fecha de nacimiento</label>
+                    <div class="form__section-input">
+                        <input type="date" name="birth-date" id="birth-date" >
+                        <i class="from__validation-state fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form__section-error">The birth date must be a valid date.</p>
+                </div>
+                <div class="form__section-radio" id="section__gender">
+                    <p>Genero</p>
+                    <div>
+                    <input type="radio" name="gender" id="gender-male" value="male" >
+                    <label for="gender-male">Hombre</label>
+                    <input type="radio" name="gender" id="gender-female" value="female">
+                    <label for="gender-female">Mujer</label>
+                    <input type="radio" name="gender" id="gender-other" value="other">
+                    <label for="gender-other">Otro</label>
+                    </div>
+                </div>
+                <div class="form__section-radio" id="section__studies">
+                    <p>Estudios</p>
+                    <div>
+                    <input type="checkbox" name="studies" id="studies-prim" value="primarios" >
+                    <label for="gender-male">Primarios</label>
+                    <input type="checkbox" name="studies" id="studies-sec" value="secundarios">
+                    <label for="studies-sec">Secundarios</label>
+                    <input type="checkbox" name="studies" id="studies-terc" value="terciarios">
+                    <label for="studies-terc">Terciarios</label>
+                    <input type="checkbox" name="studies" id="studies-uni" value="universitarios">
+                    <label for="studies-uni">Universitarios</label>
+                    <input type="checkbox" name="studies" id="studies-other" value="other">
+                    <label for="studies-other">Otros</label>
+                    </div>
+                </div>
+                <div class="form__section form__section-warning" id="form__section-warning">
+                    <p ><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Please fill in the form correctly.</p>
+                </div>
+                <div class="form__section form__section-btn-send">
+                    <button type="submit" class="form__button" id="btn-send">
+                        <div class="icono">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                        </div>
+                        <span>Registrarse</span>
+                    </button>
+                    <p class="txt-exito" id="txt-exito">The form was sent successfully, redirecting home!</p>
+                </div> 
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+   
+    </footer>
+
+    <script src="js/base.js"></script>
+
+</body>
+</html>
