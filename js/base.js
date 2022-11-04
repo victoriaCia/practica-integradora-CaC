@@ -4,7 +4,7 @@ let header=`
     </div>
     <nav class="navbar navbar__container" id="navbar">
         <div class="nav__title">
-            <p>La Cocina de Juan</p>
+            <a href="index.html"><p>La Cocina de Juan</p></a>
         </div>
         <input type="checkbox" id="toggler">
         <label for="toggler"><i class="ri-menu-line"></i></label>
@@ -16,6 +16,7 @@ let header=`
             <li><a href="signup.html">Registrarse</a></li>
             <li><a href="sucursales.html">Sucursales</a></li>
             <li><a href="clientes.html">Nuestros Clientes</a></li>
+            <li><a href="productos.html">Nuestros Productos</a></li>
         </ul>
         </div>
     </nav>
