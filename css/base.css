@@ -19,7 +19,7 @@
 
 main{
     text-align: center;
-    margin: auto 1%;
+    margin: auto 4%;
     margin-top: 20px;
 }
 
@@ -45,8 +45,8 @@ main{
     z-index: 1000;
 }
 
-.sticky + .section__container{
-    padding-top: 60px;
+.sticky + main{
+    margin-top: 60px;
 }
 
 .navbar {
